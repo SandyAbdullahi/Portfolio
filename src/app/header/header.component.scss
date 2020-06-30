@@ -28,7 +28,7 @@
 
 //floating bio container
 .inner-header {
-  padding: 1rem;
+  padding: 5rem;
   opacity: 0.6;
 
   img {
@@ -80,10 +80,8 @@
   }
 
   .inner-header {
-    padding: 2rem;
-
     p {
-      font-size: 1.2rem;
+      font-size: 2rem;
     }
   }
 
@@ -163,14 +161,6 @@
 
     .nairobi {
       font-size: 10rem;
-    }
-  }
-
-  .inner-header {
-
-
-    p {
-      font-size: 2.2rem;
     }
   }
 }
