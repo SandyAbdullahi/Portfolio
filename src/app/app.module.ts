@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { CallToEmailComponent } from './call-to-email/call-to-email.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -17,7 +18,8 @@ import { CallToEmailComponent } from './call-to-email/call-to-email.component';
     AppComponent,
     HeaderComponent,
     ProjectsComponent,
-    CallToEmailComponent
+    CallToEmailComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
