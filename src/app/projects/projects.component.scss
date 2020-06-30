@@ -26,7 +26,26 @@
 }
 
 .project-1 {
+  position: relative;
+  top: 50rem;
   text-align: center;
+
+}
+
+a:hover {
+  text-decoration: none !important;
+
+}
+
+a small {
+  font-size: 1.2rem;
+  color: $aqua-green;
+  font-weight: 900 !important;
+}
+
+a small:hover {
+
+  color: $slate-gray;
 }
 
 
@@ -73,6 +92,14 @@
 @media (min-width: 1200px) {
   .green-box-1 {
     height: 50vh;
+  }
+
+  .projects-title {
+    font-size: 5rem;
+  }
+
+  .project-1 {
+    top: 80rem;
   }
 
 
