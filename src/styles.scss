@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+// Custom.scss
+// my-colors
+$slate-gray:#615756;
+$aqua-green: #52FFB8;
+
+
+
+$theme-colors: ("primary": $slate-gray, "secondary": $aqua-green);
+
+
+
+
+
+
+
+
+// Option A: Include all of Bootstrap
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans&display=swap');
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
