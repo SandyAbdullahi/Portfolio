@@ -42,6 +42,10 @@
     opacity: 1;
     font-weight: 900;
   }
+
+  .icon {
+    display: none;
+  }
 }
 
 
@@ -84,6 +88,8 @@
     p {
       font-size: 1.2rem;
     }
+
+
   }
 
 
@@ -114,6 +120,15 @@
       font-size: 7rem;
     }
   }
+
+  .inner-header {
+    padding: 2.5rem;
+
+    .icon {
+      display: inline;
+      font-size: 5rem;
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -141,6 +156,14 @@
       font-size: 9rem;
     }
   }
+
+  .inner-header {
+
+    .icon {
+      display: inline;
+      font-size: 8rem;
+    }
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -162,6 +185,19 @@
 
     .nairobi {
       font-size: 10rem;
+    }
+  }
+
+  .inner-header {
+
+    p {
+      padding: 0.5rem;
+      font-size: 2.2rem;
+    }
+
+    .icon {
+      display: inline;
+      font-size: 8rem;
     }
   }
 }
@@ -192,4 +228,19 @@
       font-size: 12rem;
     }
   }
+
+  .inner-header {
+    padding: 3rem;
+
+    p {
+      padding: 0.5rem;
+      font-size: 2.2rem;
+    }
+
+    .icon {
+      font-size: 8rem;
+    }
+  }
+
+
 }
