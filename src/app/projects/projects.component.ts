@@ -10,9 +10,9 @@ export class ProjectsComponent implements OnInit {
 
   projectConfig: IParallaxScrollConfig = {
     parallaxSpeed: 0.6,
-    parallaxSmoothness: 0.1,
+    parallaxSmoothness: 0.2,
     parallaxDirection: 'reverse',
-    parallaxTimingFunction: 'linear',
+    parallaxTimingFunction: 'ease',
     parallaxThrottleTime: 8
   };
 

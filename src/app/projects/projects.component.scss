@@ -27,8 +27,11 @@
 
 .project-1 {
   position: relative;
-  top: 50rem;
+  top: 30rem;
   text-align: center;
+  overflow: hidden;
+  margin: 0;
+  z-index: 0;
 
 }
 
@@ -48,6 +51,12 @@ a small:hover {
   color: $slate-gray;
 }
 
+.add-z-index {
+  position: relative;
+  top: 12rem;
+  z-index: -1;
+}
+
 
 
 
@@ -58,7 +67,7 @@ a small:hover {
 @media (min-width: 576px) {
 
   .green-box-1 {
-    height: 20vh;
+    height: 30vh;
 
   }
 
@@ -71,9 +80,14 @@ a small:hover {
 @media (min-width: 768px) {
 
   .green-box-1 {
-    height: 20vh;
+    height: 30vh;
   }
 
+
+  .project-1 {
+
+    top: 60rem;
+  }
 
 
 
@@ -85,13 +99,15 @@ a small:hover {
 
   .project-1 {
     text-align: left;
+    top: 70rem;
+
   }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .green-box-1 {
-    height: 50vh;
+    height: 60vh;
   }
 
   .projects-title {
@@ -99,7 +115,7 @@ a small:hover {
   }
 
   .project-1 {
-    top: 80rem;
+    top: 60rem;
   }
 
 
