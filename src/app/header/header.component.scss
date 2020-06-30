@@ -3,6 +3,7 @@
 .top-header {
   width: 90%;
   color: #fff;
+  height: 110vh;
 
   h1 {
     line-height: 2rem;
@@ -22,6 +23,7 @@
 
   .nairobi {
     font-size: 3rem;
+    margin-bottom: -4rem;
   }
 
 }
@@ -30,6 +32,7 @@
 .inner-header {
   padding: 1rem;
   opacity: 0.6;
+
 
   img {
     filter: grayscale(100);
@@ -67,6 +70,7 @@
 @media (min-width: 576px) {
   .top-header {
     color: #fff;
+    height: 125vh;
 
     h1 {
       line-height: 2.5rem;
@@ -86,6 +90,7 @@
 
     .nairobi {
       font-size: 5rem;
+      margin-bottom: -4rem;
     }
   }
 
@@ -105,6 +110,7 @@
 @media (min-width: 768px) {
   .top-header {
     color: #fff;
+    height: 150vh;
 
     h1 {
       line-height: 4rem;
@@ -124,6 +130,7 @@
 
     .nairobi {
       font-size: 7rem;
+      margin-bottom: -4rem;
     }
   }
 
@@ -141,6 +148,7 @@
 @media (min-width: 992px) {
   .top-header {
     color: #fff;
+    height: 195vh;
 
     h1 {
       line-height: 6rem;
@@ -160,10 +168,14 @@
 
     .nairobi {
       font-size: 9rem;
+      margin-bottom: -4rem;
     }
   }
 
   .inner-header {
+    p {
+      font-size: 1.8rem;
+    }
 
     .icon {
       display: inline;
@@ -176,6 +188,7 @@
 @media (min-width: 1200px) {
   .top-header {
     color: #fff;
+    height: 215vh;
 
     .abdullahinur {
       font-size: 7rem;
@@ -191,6 +204,7 @@
 
     .nairobi {
       font-size: 10rem;
+      margin-bottom: -4rem;
     }
   }
 
@@ -213,6 +227,7 @@
 @media (min-width: 1500px) {
   .top-header {
     color: #fff;
+    height: 220vh;
 
     h1 {
       line-height: 7.5rem;
@@ -232,6 +247,7 @@
 
     .nairobi {
       font-size: 12rem;
+      margin-bottom: -4rem;
     }
   }
 

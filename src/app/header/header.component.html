@@ -5,35 +5,37 @@
   <h1 class=" nairobi">NAIROBI</h1>
 
 
-
-  <div class="container bg-secondary m-5 mx-auto inner-header rounded">
-    <img src="https://sandyabdullahi.github.io/Portfolio/assets/profile/profile.jpg" class="img-fluid rounded" alt="">
-    <div class="text-left">
-      <!-- AVATAR CONTENT -->
-      <p class="text-white">Hi, I am Abdullahi, I am a creative full stack <span class="text-primary">Web
-          Developer</span> with a focus on unorthodox web principles and made up terms like "box-model fluidity". I like
-        to design and build interactive websites and applications to better engage your customers with your brand.
-      </p>
-      <p class="text-white">I take various web principles such as dynamic content, responsive webpages with butterey
-        smooth animations that keep your users engaged and connected with your brand.
-      </p>
-      <p class="text-white"> <span class="text-primary">Or</span> If you feel like reaching out to talk, discuss code,
-        new ventures or even your favorite flavor of <span class="text-primary">Doughnut</span> I'd be happy to oblige
-        :) </p>
-    </div>
-    <hr class="bg-primary">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <fa-icon [icon]="faAirFreshener" class="icon"></fa-icon>
-        </div>
-        <div class="col">
-          <fa-icon [icon]="faAirFreshener" class="icon"></fa-icon>
-        </div>
-        <div class="col">
-          <fa-icon [icon]="faAirFreshener" class="icon"></fa-icon>
+  <ngx-parallax-scroll [config]="innerHeaderContainer">
+    <div class="container bg-secondary m-5 mx-auto inner-header rounded">
+      <img src="https://sandyabdullahi.github.io/Portfolio/assets/profile/profile.jpg" class="img-fluid rounded" alt="">
+      <div class="text-left">
+        <!-- AVATAR CONTENT -->
+        <p class="text-white">Hi, I am Abdullahi, I am a creative full stack <span class="text-primary">Web
+            Developer</span> with a focus on unorthodox web principles and made up terms like "box-model fluidity". I
+          like
+          to design and build interactive websites and applications to better engage your customers with your brand.
+        </p>
+        <p class="text-white">I take various web principles such as dynamic content, responsive webpages with butterey
+          smooth animations that keep your users engaged and connected with your brand.
+        </p>
+        <p class="text-white"> <span class="text-primary">Or</span> If you feel like reaching out to talk, discuss code,
+          new ventures or even your favorite flavor of <span class="text-primary">Doughnut</span> I'd be happy to oblige
+          :) </p>
+      </div>
+      <hr class="bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <fa-icon [icon]="faAirFreshener" class="icon"></fa-icon>
+          </div>
+          <div class="col">
+            <fa-icon [icon]="faAirFreshener" class="icon"></fa-icon>
+          </div>
+          <div class="col">
+            <fa-icon [icon]="faAirFreshener" class="icon"></fa-icon>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </ngx-parallax-scroll>
 </div>

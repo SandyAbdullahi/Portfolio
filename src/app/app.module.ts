@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 // Import font awesome
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+// Import ngx scroll
+import { NgxParallaxScrollModule } from 'ngx-parallax-scroll';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,7 +27,8 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgxParallaxScrollModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
