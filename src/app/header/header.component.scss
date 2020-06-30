@@ -28,7 +28,7 @@
 
 //floating bio container
 .inner-header {
-  padding: 5rem;
+  padding: 1rem;
   opacity: 0.6;
 
   img {
@@ -80,8 +80,9 @@
   }
 
   .inner-header {
+
     p {
-      font-size: 2rem;
+      font-size: 1.2rem;
     }
   }
 
@@ -148,7 +149,7 @@
     color: #fff;
 
     .abdullahinur {
-      font-size: 8rem;
+      font-size: 7rem;
     }
 
     .abdullahi {
@@ -167,7 +168,7 @@
 
 
 // Goku sized devices (large desktops, 1500px and up)
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .top-header {
     color: #fff;
 
