@@ -1,0 +1,79 @@
+@import '../../styles.scss';
+
+.container {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+
+
+  .projects-title {
+    margin-bottom: 10rem;
+  }
+}
+
+
+.green-box {
+  display: none;
+  height: 200px;
+  width: 400px;
+  background-color: $aqua-green;
+}
+
+.green-box-1 {
+  height: 20vh;
+  background: url('../../assets/projects/abblog.png') no-repeat center;
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+
+.project-1 {
+  text-align: center;
+}
+
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+  .green-box-1 {
+    height: 20vh;
+
+  }
+
+  .project-1 {
+    text-align: center;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+  .green-box-1 {
+    height: 20vh;
+  }
+
+
+
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+
+  .project-1 {
+    text-align: left;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .green-box-1 {
+    height: 50vh;
+  }
+
+
+}
