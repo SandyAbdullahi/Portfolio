@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { CallToEmailComponent } from './call-to-email/call-to-email.component';
 
 
 
@@ -15,7 +16,8 @@ import { ProjectsComponent } from './projects/projects.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    CallToEmailComponent
   ],
   imports: [
     BrowserModule,
