@@ -1,0 +1,194 @@
+// Header at the top of the page acts as a container for the floating bio
+
+.top-header {
+  width: 90%;
+  color: #fff;
+
+  h1 {
+    line-height: 2rem;
+  }
+
+  .abdullahinur {
+    font-size: 1.8rem;
+  }
+
+  .abdullahi {
+    font-size: 2.2rem;
+  }
+
+  .web-developer {
+    font-size: 2rem;
+  }
+
+  .nairobi {
+    font-size: 3rem;
+  }
+
+}
+
+//floating bio container
+.inner-header {
+  padding: 5rem;
+  opacity: 0.6;
+
+  img {
+    filter: grayscale(100);
+    width: 95%;
+  }
+
+  p {
+
+    margin: 1rem;
+    opacity: 1;
+    font-weight: 900;
+  }
+}
+
+
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .top-header {
+    color: #fff;
+
+    h1 {
+      line-height: 2.5rem;
+    }
+
+    .abdullahinur {
+      font-size: 3rem;
+    }
+
+    .abdullahi {
+      font-size: 4rem;
+    }
+
+    .web-developer {
+      font-size: 3rem;
+    }
+
+    .nairobi {
+      font-size: 5rem;
+    }
+  }
+
+  .inner-header {
+    p {
+      font-size: 2rem;
+    }
+  }
+
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .top-header {
+    color: #fff;
+
+    h1 {
+      line-height: 4rem;
+    }
+
+    .abdullahinur {
+      font-size: 4rem;
+    }
+
+    .abdullahi {
+      font-size: 6rem;
+    }
+
+    .web-developer {
+      font-size: 5rem;
+    }
+
+    .nairobi {
+      font-size: 7rem;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .top-header {
+    color: #fff;
+
+    h1 {
+      line-height: 6rem;
+    }
+
+    .abdullahinur {
+      font-size: 6rem;
+    }
+
+    .abdullahi {
+      font-size: 8rem;
+    }
+
+    .web-developer {
+      font-size: 6rem;
+    }
+
+    .nairobi {
+      font-size: 9rem;
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .top-header {
+    color: #fff;
+
+    .abdullahinur {
+      font-size: 8rem;
+    }
+
+    .abdullahi {
+      font-size: 9rem;
+    }
+
+    .web-developer {
+      font-size: 7rem;
+    }
+
+    .nairobi {
+      font-size: 10rem;
+    }
+  }
+}
+
+
+// Goku sized devices (large desktops, 1500px and up)
+@media (min-width: 1200px) {
+  .top-header {
+    color: #fff;
+
+    h1 {
+      line-height: 7.5rem;
+    }
+
+    .abdullahinur {
+      font-size: 9rem;
+    }
+
+    .abdullahi {
+      font-size: 11rem;
+    }
+
+    .web-developer {
+      font-size: 9rem;
+    }
+
+    .nairobi {
+      font-size: 12rem;
+    }
+  }
+}
