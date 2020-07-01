@@ -4,10 +4,7 @@
   padding: 6rem;
   color: #fff;
 
-  #Email {
-    margin: auto auto;
-    width: 100%;
-  }
+
 
 
 }
@@ -17,7 +14,13 @@
 // No media query for `xs` since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+
+  #Email {
+    margin: auto auto;
+    width: 100%;
+  }
+}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {}
