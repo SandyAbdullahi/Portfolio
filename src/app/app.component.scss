@@ -6,6 +6,7 @@
   border: 5px solid $aqua-green;
   padding: 1rem;
   position: relative;
+  border-bottom: none;
 }
 
 
@@ -19,7 +20,11 @@
 @media (min-width: 768px) {}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+  .work-status {
+    border-bottom: 5px solid $aqua-green;
+  }
+}
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}
