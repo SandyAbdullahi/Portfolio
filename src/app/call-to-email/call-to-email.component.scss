@@ -1,13 +1,15 @@
 .email {
   margin-top: 5rem;
-  margin-bottom: 5rem;
-  padding: 2rem;
+
+  padding: 6rem;
   color: #fff;
 
   #Email {
     margin: auto auto;
     width: 50%;
   }
+
+
 }
 
 
@@ -33,5 +35,11 @@
   #Email {
     margin: auto auto;
     width: 50%;
+  }
+
+  .email {
+    h3 {
+      font-size: 4rem;
+    }
   }
 }

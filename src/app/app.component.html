@@ -1,11 +1,13 @@
 <app-header></app-header>
 <app-projects></app-projects>
-<div class="container work-status text-center">
-  <fa-icon [icon]="faFish" size="2x" class="text-secondary"></fa-icon>
-  <h1 class="display-4 text-primary">Gone Fishing</h1>
-  <p class="lead text-primary">If you're looking to hire me for some work, I am currently <span
-      class="text-danger">UNAVAILABLE</span>.</p>
-  <P class="small text-secondary">Watch this space for details.</P>
-</div>
+<ngx-parallax-scroll [config]="WorkStatusConfig" class="add-z-index">
+  <div class="container work-status text-center">
+    <fa-icon [icon]="faFish" size="2x" class="text-secondary"></fa-icon>
+    <h1 class="display-4 text-primary">Gone Fishing</h1>
+    <p class="lead text-primary">If you're looking to hire me for some work, I am currently <span
+        class="text-danger">UNAVAILABLE</span>.</p>
+    <P class="small text-secondary">Watch this space for details.</P>
+  </div>
+</ngx-parallax-scroll>
 <app-call-to-email></app-call-to-email>
 <app-footer></app-footer>
