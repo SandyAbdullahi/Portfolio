@@ -13,6 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { CallToEmailComponent } from './call-to-email/call-to-email.component';
 import { FooterComponent } from './footer/footer.component';
+import { Hover1Directive } from './hover-1.directive';
 
 
 
@@ -22,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     ProjectsComponent,
     CallToEmailComponent,
-    FooterComponent
+    FooterComponent,
+    Hover1Directive
   ],
   imports: [
     BrowserModule,
