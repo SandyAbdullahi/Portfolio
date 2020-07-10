@@ -257,7 +257,7 @@
 @media (min-width: 1200px) {
   .top-header {
     color: #fff;
-    height: 115rem;
+    height: 125rem;
 
     .abdullahinur {
       font-size: 7rem;
@@ -292,6 +292,13 @@
   }
 }
 
+
+
+@media (min-width: 1300px) {
+  .top-header {
+    height: 115rem;
+  }
+}
 
 // Goku sized devices (large desktops, 1500px and up)
 @media (min-width: 1500px) {

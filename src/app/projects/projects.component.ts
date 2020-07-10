@@ -8,8 +8,16 @@ import { IParallaxScrollConfig } from 'ngx-parallax-scroll'
 })
 export class ProjectsComponent implements OnInit {
 
-  projectConfig: IParallaxScrollConfig = {
+  projectOneConfig: IParallaxScrollConfig = {
     parallaxSpeed: 0.6,
+    parallaxSmoothness: 0.2,
+    parallaxDirection: 'reverse',
+    parallaxTimingFunction: 'ease',
+    parallaxThrottleTime: 8
+  };
+
+  projectTwoConfig: IParallaxScrollConfig = {
+    parallaxSpeed: 0.9,
     parallaxSmoothness: 0.2,
     parallaxDirection: 'reverse',
     parallaxTimingFunction: 'ease',

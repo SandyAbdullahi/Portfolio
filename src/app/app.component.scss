@@ -1,12 +1,12 @@
 @import '../styles.scss';
 
 .work-status {
-  margin-top: 30rem;
-  margin-bottom: -35rem;
+  margin-top: 15rem;
+  margin-bottom: -30rem;
   border: 5px solid $aqua-green;
   padding: 1rem;
   position: relative;
-  border-bottom: none;
+
 }
 
 
@@ -23,6 +23,7 @@
 @media (min-width: 992px) {
   .work-status {
     border-bottom: 5px solid $aqua-green;
+    margin-bottom: -34rem;
   }
 }
 
