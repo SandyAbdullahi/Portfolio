@@ -101,6 +101,11 @@ a small:hover {
   .project-2 {
     text-align: center;
   }
+
+  .center-ipad {
+
+    margin: auto
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -119,13 +124,13 @@ a small:hover {
 
   .project-1 {
 
-    top: 35rem;
+    top: 45rem;
   }
 
 
   .project-2 {
 
-    top: 70rem;
+    top: 80rem;
   }
 
 
@@ -134,7 +139,7 @@ a small:hover {
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .projects {
-    height: 115vh;
+    height: 130vh;
   }
 
   .project-1 {
@@ -144,12 +149,21 @@ a small:hover {
   }
 
   .project-2 {
-    text-align: left;
+    text-align: right;
     top: 130rem;
 
   }
 }
 
+@media (min-width: 1000px) {
+  .project-1 {
+    top: 60rem;
+  }
+
+  .project-2 {
+    top: 105rem;
+  }
+}
 
 
 // Extra large devices (large desktops, 1200px and up)
@@ -188,8 +202,27 @@ a small:hover {
 
 }
 
+
 @media (min-width: 1366px) {
   .projects {
     height: 115%;
+  }
+
+  .project-1 {
+    top: 53rem;
+  }
+
+  .project-2 {
+    top: 97rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .project-1 {
+    top: 65rem;
+  }
+
+  .project-2 {
+    top: 115rem;
   }
 }

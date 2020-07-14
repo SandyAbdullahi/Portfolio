@@ -9,7 +9,7 @@
   background-color: #aaa !important;
   color: hotpink !important;
   font-family: Helvetica, sans-serif !important;
-  width: 100% !important;
+
 }
 
 .inner-header-blue {
@@ -46,44 +46,69 @@
 
 
 .hide {
-  display: none;
+
+  left: -999em;
 
 }
 
 #show {
-  margin: 0;
-  position: fixed;
-  padding: 0;
-  text-align: center;
-  width: 50%;
+  width: 45%;
+  margin: auto;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0vh;
+
 }
 
 
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
 
 .top-header {
-  width: 90%;
+  width: 95%;
   color: #ffffff;
-  height: 65rem;
+  height: 70rem;
+  padding-top: 1rem;
 
   h1 {
-    line-height: 2rem;
+    line-height: 1.8rem;
   }
 
   .abdullahinur {
-    font-size: 1.8rem;
+    font-size: 2.6rem;
   }
 
   .abdullahi {
-    font-size: 2.2rem;
+    font-size: 3.5rem;
   }
 
   .web-developer {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   .nairobi {
     font-size: 3rem;
     margin-bottom: -4rem;
+    line-height: 2rem;
+  }
+
+  .to-projects {
+    display: grid;
+    opacity: 0.8;
+
+    fa-icon {
+      font-size: 4rem;
+    }
+
+    small {
+      color: #fff;
+    }
+
+    a:hover {
+      color: hotpink !important;
+
+    }
+
   }
 
 }
@@ -123,12 +148,19 @@
   }
 }
 
+// For Iphones
+@media (min-width: 375px),
+(min-height: 812px) {
+  .top-header {
+    height: 72rem;
+  }
+
+}
 
 
 
 
-// Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
+
 
 
 
@@ -167,7 +199,10 @@
     }
 
 
+
+
   }
+
 
 
 }
@@ -176,7 +211,7 @@
 @media (min-width: 768px) {
   .top-header {
     color: #fff;
-    height: 130vh;
+    height: 150vh;
 
     h1 {
       line-height: 4rem;
@@ -195,7 +230,7 @@
     }
 
     .nairobi {
-      font-size: 7rem;
+      font-size: 6rem;
       margin-bottom: -4rem;
     }
   }
@@ -210,6 +245,23 @@
     }
   }
 }
+
+@media (min-width: 800px) {
+  .top-header {
+    box-sizing: border-box;
+    height: 180vh;
+
+    h1 {
+      line-height: 0.75;
+    }
+
+    .nairobi {
+      line-height: 0.7;
+    }
+  }
+}
+
+
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
@@ -253,6 +305,53 @@
   }
 }
 
+
+
+
+
+@media (min-width: 1000px) {
+  .top-header {
+    box-sizing: border-box;
+    height: 220vh;
+
+    h1 {
+      line-height: 0.75;
+    }
+
+    .nairobi {
+      line-height: 0.7;
+    }
+
+    .to-projects {
+
+      small {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+@media (min-width: 1000px),
+(min-height: 1366px) {
+  .top-header {
+    box-sizing: border-box;
+    height: 140vh;
+
+    h1 {
+      line-height: 0.75;
+    }
+
+    .nairobi {
+      line-height: 0.7;
+    }
+  }
+}
+
+
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .top-header {
@@ -272,8 +371,9 @@
     }
 
     .nairobi {
-      font-size: 10rem;
+      font-size: 9rem;
       margin-bottom: -4rem;
+      line-height: 0.6;
     }
   }
 
@@ -297,6 +397,27 @@
 @media (min-width: 1300px) {
   .top-header {
     height: 115rem;
+
+    h1 {
+      line-height: 6.6rem;
+    }
+
+    .abdullahinur {
+      font-size: 8rem;
+    }
+
+    .abdullahi {
+      font-size: 11rem;
+    }
+
+    .web-developer {
+      font-size: 7rem;
+    }
+
+    .nairobi {
+      font-size: 10rem;
+      margin-bottom: -4rem;
+    }
   }
 }
 
@@ -307,11 +428,11 @@
     height: 220vh;
 
     h1 {
-      line-height: 7.5rem;
+      line-height: 8.3rem;
     }
 
     .abdullahinur {
-      font-size: 9rem;
+      font-size: 11rem;
     }
 
     .abdullahi {
@@ -319,11 +440,11 @@
     }
 
     .web-developer {
-      font-size: 9rem;
+      font-size: 10rem;
     }
 
     .nairobi {
-      font-size: 12rem;
+      font-size: 15rem;
       margin-bottom: -4rem;
     }
   }

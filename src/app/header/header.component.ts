@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { faAirFreshener } from "@fortawesome/free-solid-svg-icons";
-import { IParallaxScrollConfig } from 'ngx-parallax-scroll'
+import { faAirFreshener, faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { IParallaxScrollConfig } from 'ngx-parallax-scroll';
+import { gsap } from 'gsap';
+
 
 
 @Component({
@@ -10,6 +12,7 @@ import { IParallaxScrollConfig } from 'ngx-parallax-scroll'
 })
 export class HeaderComponent implements OnInit {
   faAirFreshener = faAirFreshener;
+  faArrowDown = faArrowDown;
 
 
   //Parallax configurations
@@ -24,6 +27,7 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    gsap.fromTo(".flashing", { opacity: 0 }, { opacity: 1, duration: 1, repeat: 400 });
   }
 
 }

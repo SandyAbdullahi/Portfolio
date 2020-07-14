@@ -33,6 +33,16 @@
   }
 }
 
+
+// Large devices (desktops, 100px and up)
+@media (min-width: 1000px) {
+
+  #Email {
+    margin: auto auto;
+    width: 50%;
+  }
+}
+
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   #Email {
