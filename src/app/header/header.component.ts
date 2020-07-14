@@ -2,6 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { faAirFreshener } from "@fortawesome/free-solid-svg-icons";
 import { IParallaxScrollConfig } from 'ngx-parallax-scroll'
 import * as $ from 'jquery';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
+gsap.registerPlugin(ScrollTrigger);
+
 
 @Component({
   selector: 'app-header',
@@ -25,7 +31,22 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     $(document).ready(function () {
-      alert('we call alert from JQuery');
+
+
+
+      gsap.to(".navbar", {
+        scrollTrigger: {
+          trigger: ".trigger-1",
+          toggleActions: "restart none none reset",
+
+        },
+        position: "relative",
+        backgroundColor: "#52FFB8",
+        bottom: "0",
+        color: "#fff",
+
+      })
+
     });
   }
 
