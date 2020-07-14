@@ -1,8 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { faAirFreshener, faArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { IParallaxScrollConfig } from 'ngx-parallax-scroll';
-import { gsap } from 'gsap';
+import { faAirFreshener } from "@fortawesome/free-solid-svg-icons";
+import { IParallaxScrollConfig } from 'ngx-parallax-scroll'
+import * as $ from 'jquery';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+
+gsap.registerPlugin(ScrollTrigger);
 
 
 @Component({
@@ -12,22 +16,39 @@ import { gsap } from 'gsap';
 })
 export class HeaderComponent implements OnInit {
   faAirFreshener = faAirFreshener;
-  faArrowDown = faArrowDown;
+
 
 
   //Parallax configurations
   innerHeaderContainer: IParallaxScrollConfig = {
-    parallaxSpeed: 0.4,
-    parallaxSmoothness: 0.1,
+    parallaxSpeed: 0,
+    parallaxSmoothness: 0,
     parallaxDirection: 'reverse',
     parallaxTimingFunction: 'linear',
-    parallaxThrottleTime: 8
+    parallaxThrottleTime: 0
   };
 
   constructor() { }
 
   ngOnInit(): void {
-    gsap.fromTo(".flashing", { opacity: 0 }, { opacity: 1, duration: 1, repeat: 400 });
+    $(document).ready(function () {
+
+
+
+      gsap.to(".navbar", {
+        scrollTrigger: {
+          trigger: ".trigger-1",
+          toggleActions: "restart none none reset",
+
+        },
+        position: "relative",
+        backgroundColor: "#52FFB8",
+        bottom: "0",
+        color: "#fff",
+
+      })
+
+    });
   }
 
 }

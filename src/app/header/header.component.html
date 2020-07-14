@@ -1,19 +1,16 @@
-<div class="container-fluid bg-primary m-5 text-center mx-auto top-header rounded">
-  <h1 class="abdullahinur">ABDULLAHINUR</h1>
-  <h1 class="abdullahi">ABDULLAHI</h1>
-  <h1 class="web-developer">WEB DEVELOPER</h1>
-  <h1 class=" nairobi">NAIROBI, KE</h1>
+<div class="top-header container-fluid bg-primary ">
+  <div class="heading-container">
+    <h1 class="abdullahinur">ABDULLAHINUR</h1>
+    <h1 class="abdullahi">ABDULLAHI</h1>
+    <h1 class="web-developer">WEB DEVELOPER</h1>
+    <h1 class="nairobi">NAIROBI, KE</h1>
+
+  </div>
 
 
   <ngx-parallax-scroll [config]="innerHeaderContainer">
-    <div class="container bg-secondary m-5 mx-auto inner-header rounded">
-      <img src="../../assets/profile/profile.jpg" class="img-fluid rounded mt-1" alt="">
-      <div class="to-projects">
-        <small class="flashing">(To Projects)</small>
-        <a href="#to-projects">
-          <fa-icon [icon]="faArrowDown"></fa-icon>
-        </a>
-      </div>
+    <div class="inner-header bg-secondary">
+      <img src="../../assets/profile/profile.jpg" class="img-fluid rounded p-3" alt="">
       <div class="text-left">
         <!-- AVATAR CONTENT -->
         <p class="text-white">Hi, I am Abdullahi, I am a creative full stack <span class="text-primary">Web
@@ -32,20 +29,15 @@
           <h2 class="display-3">Hello World</h2>
         </div>
       </div>
-      <hr class="bg-primary">
-      <div class="container">
-        <div class="row ">
-          <div class="col">
-            <fa-icon [icon]="faAirFreshener" class="icon remove"></fa-icon>
-          </div>
-          <div class="col">
-            <fa-icon Hover1 [icon]="faAirFreshener" class="icon"></fa-icon>
-          </div>
-          <div class="col">
-            <fa-icon [icon]="faAirFreshener" class="icon remove"></fa-icon>
-          </div>
-        </div>
-      </div>
+      <hr class="bg-primary w-75 mx-auto my-5">
     </div>
   </ngx-parallax-scroll>
+  <nav class="navbar navbar-expand  m-0">
+    <div class="nav navbar-nav mx-auto">
+      <a class="nav-item nav-link active" [ngxScrollTo]="'#destination'" [ngxScrollToOffset]="-10">Projects</a> </div>
+
+  </nav>
+
+
+  <div class="trigger-1"></div>
 </div>

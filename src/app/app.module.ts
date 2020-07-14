@@ -5,7 +5,8 @@ import { NgModule } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 // Import ngx scroll
 import { NgxParallaxScrollModule } from 'ngx-parallax-scroll';
-
+//Import ng smooth scroll
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,6 +32,7 @@ import { Hover1Directive } from './hover-1.directive';
     AppRoutingModule,
     FontAwesomeModule,
     NgxParallaxScrollModule,
+    ScrollToModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
