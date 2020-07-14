@@ -18,17 +18,8 @@ $theme-colors: ("primary": $slate-gray, "secondary": $aqua-green);
 // Option A: Include all of Bootstrap
 
 @import "../node_modules/bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans&display=swap');
-
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Montserrat', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }

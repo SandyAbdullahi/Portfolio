@@ -11,11 +11,11 @@ export class AppComponent implements OnInit {
   faFish = faFish;
 
   WorkStatusConfig: IParallaxScrollConfig = {
-    parallaxSpeed: 0.2,
-    parallaxSmoothness: 0.1,
+    parallaxSpeed: 0,
+    parallaxSmoothness: 0,
     parallaxDirection: 'reverse',
     parallaxTimingFunction: 'ease',
-    parallaxThrottleTime: 1
+    parallaxThrottleTime: 0
   };
 
 

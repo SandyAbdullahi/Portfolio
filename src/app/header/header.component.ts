@@ -14,11 +14,11 @@ export class HeaderComponent implements OnInit {
 
   //Parallax configurations
   innerHeaderContainer: IParallaxScrollConfig = {
-    parallaxSpeed: 0.4,
-    parallaxSmoothness: 0.1,
+    parallaxSpeed: 0,
+    parallaxSmoothness: 0,
     parallaxDirection: 'reverse',
     parallaxTimingFunction: 'linear',
-    parallaxThrottleTime: 8
+    parallaxThrottleTime: 0
   };
 
   constructor() { }
