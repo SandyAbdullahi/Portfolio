@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faFish } from "@fortawesome/free-solid-svg-icons";
 import { IParallaxScrollConfig } from 'ngx-parallax-scroll'
+import gsap from 'gsap';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +21,8 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit(): void {
-
+    gsap.set("app-header", {
+      y: -window.pageYOffset
+    });
   }
 }
