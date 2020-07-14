@@ -47,6 +47,11 @@ export class HeaderComponent implements OnInit {
 
       })
 
+
+      var star = document.querySelector('.my-svg');
+
+      gsap.to(star, 4, { rotate: "360", ease: "linear", repeat: -1 });
+
     });
   }
 
