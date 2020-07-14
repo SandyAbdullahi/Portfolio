@@ -1,1 +1,26 @@
+//Start with mobile view
+.top-header {
+  text-align: center;
+  padding-top: 12rem;
 
+  h1 {
+    color: #fff;
+    font-size: 2.9rem;
+    line-height: 0.7;
+    font-weight: 600;
+  }
+
+  .heading-container {
+    margin-bottom: 25rem;
+
+    .web-developer {
+      font-size: 2.5rem;
+    }
+  }
+
+  .navbar {
+    transform: translate(0%, 5%);
+  }
+
+
+}

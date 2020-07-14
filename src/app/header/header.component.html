@@ -1,12 +1,21 @@
-<div class="top-header container-fluid bg-primary rounded">
-  <h1 class="abdullahinur">ABDULLAHINUR</h1>
-  <h1 class="abdullahi">ABDULLAHI</h1>
-  <h1 class="web-developer">WEB DEVELOPER</h1>
-  <h1 class=" nairobi">NAIROBI</h1>
+<div class="top-header container-fluid bg-primary">
+  <div class="heading-container">
+    <h1 class="abdullahinur">ABDULLAHINUR</h1>
+    <h1 class="abdullahi">ABDULLAHI</h1>
+    <h1 class="web-developer">WEB DEVELOPER</h1>
+    <h1 class="nairobi">NAIROBI, KE</h1>
+  </div>
+  <hr class="bg-light m-0">
+  <nav class="navbar navbar-expand navbar-light bg-primary m-0">
+    <div class="nav navbar-nav mx-auto">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Home</a>
+    </div>
+  </nav>
 
 
   <ngx-parallax-scroll [config]="innerHeaderContainer">
-    <div class="inner-header container bg-secondary rounded">
+    <div class="inner-header container bg-secondary">
       <img src="../../assets/profile/profile.jpg" class="img-fluid rounded" alt="">
       <div class="text-left">
         <!-- AVATAR CONTENT -->
@@ -23,7 +32,7 @@
           :) </p>
       </div>
       <hr class="bg-primary">
-      <div class="container">
+      <!-- <div class="container">
         <div class="row">
           <div class="col">
             <fa-icon [icon]="faAirFreshener" class="icon"></fa-icon>
@@ -35,7 +44,19 @@
             <fa-icon [icon]="faAirFreshener" class="icon"></fa-icon>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </ngx-parallax-scroll>
+  <div class="container text-center p-container">
+    <div class="row">
+      <div class="col-sm-6">
+        Projects
+      </div>
+      <div class="col-sm-6">
+        Projects
+      </div>
+    </div>
+  </div>
+
+
 </div>
