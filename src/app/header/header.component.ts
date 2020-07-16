@@ -31,26 +31,37 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     $(document).ready(function () {
-
-
-
       gsap.to(".navbar", {
         scrollTrigger: {
           trigger: ".trigger-1",
           toggleActions: "restart none none reset",
-
         },
         position: "relative",
         backgroundColor: "#52FFB8",
         bottom: "0",
         color: "#fff",
+      })
 
+      gsap.to('.my-svg polygon', {
+        rotation: '360',
+        duration: 8,
+        repeat: -1,
+        ease: 'linear',
+        transformOrigin: '50% 50%',
       })
 
 
-      var star = document.querySelector('.my-svg');
+      gsap.to('.my-svg .st1', {
+        rotation: '-360',
+        duration: 5,
+        repeat: -1,
+        ease: 'linear',
+        transformOrigin: '50% 50%',
+      })
 
-      gsap.to(star, 4, { rotate: "360", ease: "linear", repeat: -1 });
+
+
+
 
     });
   }

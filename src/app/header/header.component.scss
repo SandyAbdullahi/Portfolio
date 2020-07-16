@@ -33,13 +33,17 @@
   }
 
   .my-svg {
+
+    overflow: hidden;
     position: relative;
-    right: 1.4rem;
+
 
   }
 
 
+
 }
+
 
 .inner-header {
   padding-bottom: 2rem;
