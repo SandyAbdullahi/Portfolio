@@ -1,1 +1,11 @@
 @import '../styles.scss';
+
+.work-status {
+  border: 10px solid #52FFB8;
+  padding: 2rem;
+
+  fa-icon {
+    display: inline-block;
+    transform: rotate(-90deg);
+  }
+}
