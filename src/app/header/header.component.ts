@@ -52,6 +52,8 @@ export class HeaderComponent implements OnInit {
 
 
       gsap.to('.my-svg .st1', {
+        direction: 'reverse',
+        scale: 1.5,
         rotation: '-360',
         duration: 5,
         repeat: -1,
