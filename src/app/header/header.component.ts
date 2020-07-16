@@ -44,7 +44,7 @@ export class HeaderComponent implements OnInit {
 
       gsap.to('.my-svg polygon', {
         rotation: '360',
-        duration: 8,
+        duration: 15,
         repeat: -1,
         ease: 'linear',
         transformOrigin: '50% 50%',
@@ -54,6 +54,14 @@ export class HeaderComponent implements OnInit {
       gsap.to('.my-svg .st1', {
         rotation: '-360',
         duration: 5,
+        repeat: -1,
+        ease: 'linear',
+        transformOrigin: '50% 50%',
+      })
+
+      gsap.to('.my-svg .st2', {
+        rotation: '360',
+        duration: 9,
         repeat: -1,
         ease: 'linear',
         transformOrigin: '50% 50%',
