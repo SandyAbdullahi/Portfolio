@@ -21,18 +21,21 @@ export class HeaderComponent implements OnInit {
 
   //Parallax configurations
   innerHeaderContainer: IParallaxScrollConfig = {
-    parallaxSpeed: 0,
-    parallaxSmoothness: 0,
+    parallaxSpeed: 0.7,
+    parallaxSmoothness: 0.2,
     parallaxDirection: 'reverse',
     parallaxTimingFunction: 'linear',
-    parallaxThrottleTime: 0
+    parallaxThrottleTime: 1
   };
 
   constructor() { }
 
   ngOnInit(): void {
     $(document).ready(function () {
-      gsap.to(".navbar", {
+      const tl = gsap.timeline();
+
+
+      tl.to(".navbar", {
         scrollTrigger: {
           trigger: ".trigger-1",
           toggleActions: "restart none none reset",
@@ -42,33 +45,31 @@ export class HeaderComponent implements OnInit {
         bottom: "0",
         color: "#fff",
       })
-
-      gsap.to('.my-svg polygon', {
-        rotation: '360',
-        duration: 15,
-        repeat: -1,
-        ease: 'linear',
-        transformOrigin: '50% 50%',
-      })
-
+        .to('.my-svg polygon', {
+          rotation: '360',
+          duration: 15,
+          repeat: -1,
+          ease: 'linear',
+          transformOrigin: '50% 50%',
+        }, "+=0")
+        .to('.my-svg .st2', {
+          rotation: '360',
+          duration: 9,
+          repeat: -1,
+          ease: 'linear',
+          transformOrigin: '50% 50%',
+        })
 
       gsap.to('.my-svg .st1', {
-        direction: 'reverse',
-        scale: 1.5,
+        scale: '1.5',
         rotation: '-360',
-        duration: 5,
-        repeat: -1,
-        ease: 'linear',
-        transformOrigin: '50% 50%',
-      })
-
-      gsap.to('.my-svg .st2', {
-        rotation: '360',
         duration: 9,
         repeat: -1,
-        ease: 'linear',
+        ease: "slow(0.7, 0.7, false)",
         transformOrigin: '50% 50%',
+        yoyo: true,
       })
+
 
 
 

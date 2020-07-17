@@ -3,7 +3,7 @@
 //Start with mobile view
 .top-header {
   text-align: center;
-  padding: 2rem 0 0 0;
+  padding: 0;
 
   h1 {
     color: #fff;
@@ -13,7 +13,7 @@
   }
 
   .heading-container {
-    margin-bottom: 15rem;
+    margin: 9vh auto;
 
     .web-developer {
       font-size: 2.4rem;
@@ -38,6 +38,7 @@
     position: relative;
 
 
+
   }
 
 
@@ -46,9 +47,79 @@
 
 
 .inner-header {
+  margin-bottom: -20rem;
   padding-bottom: 2rem;
+  opacity: 0.8;
 
   .text-left {
+    opacity: 1 !important;
     padding: 1rem 1.5rem;
   }
+
+  img {
+    filter: grayscale(100%) !important;
+    opacity: 0.7;
+  }
 }
+
+
+
+// Small devices (landscape phones, 576px and up)
+
+@media (min-width: 576px) {
+
+  .heading-container {
+    margin: 20rem auto;
+  }
+}
+
+// For annoying Iphones
+@media (min-width: 576px),
+(min-height: 800px) {
+
+  .heading-container {
+    margin: 3rem 0rem 12rem 0rem !important;
+  }
+
+  .my-svg {
+    margin-top: 5rem !important;
+  }
+}
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+  .top-header {
+
+
+    h1 {
+      font-size: 6rem;
+    }
+
+    .web-developer {
+      font-size: 5rem !important;
+    }
+
+    .my-svg {
+      display: none;
+    }
+
+    .heading-container {
+      margin-bottom: -3rem !important;
+    }
+  }
+
+  .inner-header {
+    width: 60%;
+    margin: auto;
+
+
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
