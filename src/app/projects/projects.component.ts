@@ -9,7 +9,7 @@ import { IParallaxScrollConfig } from 'ngx-parallax-scroll'
 export class ProjectsComponent implements OnInit {
 
   projectOneConfig: IParallaxScrollConfig = {
-    parallaxSpeed: 0,
+    parallaxSpeed: 0.4,
     parallaxSmoothness: 0,
     parallaxDirection: 'reverse',
     parallaxTimingFunction: 'ease',
