@@ -54,7 +54,7 @@ export class HeaderComponent implements OnInit {
           transformOrigin: '50% 50%',
         }, "+=0")
         .to('.my-svg #SVGID_x5F_1_x5F_', {
-          rotation: '360',
+          rotation: '-360',
           duration: 19,
           repeat: -1,
           ease: 'linear',
