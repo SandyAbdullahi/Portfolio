@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { IParallaxScrollConfig } from 'ngx-parallax-scroll'
 import * as $ from 'jquery';
+import * as Rellax from 'rellax';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-
-
+gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -11,29 +13,34 @@ import * as $ from 'jquery';
 })
 export class ProjectsComponent implements OnInit {
 
-  projectOneConfig: IParallaxScrollConfig = {
-    parallaxSpeed: 0,
-    parallaxSmoothness: 0,
-    parallaxDirection: 'reverse',
-    parallaxTimingFunction: 'ease',
-    parallaxThrottleTime: 0
-  };
-
-  projectTwoConfig: IParallaxScrollConfig = {
-    parallaxSpeed: 0,
-    parallaxSmoothness: 0,
-    parallaxDirection: 'reverse',
-    parallaxTimingFunction: 'ease',
-    parallaxThrottleTime: 0
-  };
 
   constructor() { }
 
   ngOnInit(): void {
     $(document).ready(function () {
+      var rellax = new Rellax('.rellax', {
+      });
 
+      const tl = gsap.timeline();
 
-
+      gsap.fromTo(".card", {
+        scrollTrigger: {
+          trigger: ".trigger-3",
+          toggleActions: "restart none none reset",
+        },
+        duration: 1,
+        backgroundColor: "hsl(5,6,35)",
+      },
+        {
+          scrollTrigger: {
+            trigger: ".trigger-",
+            toggleActions: "restart none none reset",
+          },
+          duration: 2.5,
+          ease: "power2.inOut",
+          backgroundColor: "hsl(155,100,66, 0.5)",
+        }
+      )
     })
   }
 

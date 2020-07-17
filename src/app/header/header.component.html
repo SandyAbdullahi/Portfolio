@@ -65,7 +65,7 @@
             d="M192.2,121.5c0,37-30,67-67,67s-67-30-67-67s30-67,67-67S192.2,84.5,192.2,121.5z" />
           <text>
             <textPath xlink:href="#SVGID_x5F_1_x5F_" startOffset="1%">
-              <tspan style="fill:#FFFFFF; font-family:'Helvetica'; font-size:12px; font-weight: 900;">Sometimes Things
+              <tspan style="fill:none; font-family:'Helvetica'; font-size:12px; font-weight: 900;">Sometimes Things
                 Can Move On their
                 Own.</tspan>
             </textPath>
@@ -78,7 +78,8 @@
 
 
   <ngx-parallax-scroll [config]="innerHeaderContainer">
-    <div class="inner-header bg-secondary">
+    <div class="inner-header bg-secondary rellax" data-rellax-speed="7" data-rellax-xs-speed="0" data-rellax-mobile-speed="0"
+      data-rellax-tablet-speed="-4" data-rellax-desktop-speed="10" data-rellax-zindex="-1">
       <img src="../../assets/profile/profile.jpg" class="img-fluid rounded p-3" alt="">
       <div class="text-left font-weight-bold">
         <!-- AVATAR CONTENT -->
@@ -98,7 +99,7 @@
       <hr class="bg-primary w-75 mx-auto my-5">
     </div>
   </ngx-parallax-scroll>
-  <nav class="navbar navbar-expand  m-0">
+  <nav class="navbar navbar-expand ">
     <div class="nav navbar-nav mx-auto">
       <a name="" id="" class="btn btn-lg btn-secondary" [ngxScrollTo]="'#destination'" [ngxScrollToOffset]="60"
         role="button">Projects</a>

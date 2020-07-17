@@ -47,7 +47,7 @@
 
 
 .inner-header {
-  margin-bottom: -25rem;
+
   padding-bottom: 2rem;
   opacity: 0.8;
 
@@ -94,6 +94,7 @@
 
 
     h1 {
+      font-weight: 900;
       font-size: 6rem;
     }
 
@@ -106,15 +107,15 @@
     }
 
     .heading-container {
-      margin-bottom: -3rem !important;
+      margin-bottom: -2rem !important;
     }
   }
 
   .inner-header {
+    padding-bottom: 2rem;
     width: 60%;
-    margin: auto;
+    margin: 0rem auto 18rem auto;
 
-    margin-bottom: -6rem !important;
   }
 }
 

@@ -22,11 +22,11 @@ export class HeaderComponent implements OnInit {
 
   //Parallax configurations
   innerHeaderContainer: IParallaxScrollConfig = {
-    parallaxSpeed: 0.7,
-    parallaxSmoothness: 0.2,
+    parallaxSpeed: 0,
+    parallaxSmoothness: 0,
     parallaxDirection: 'reverse',
     parallaxTimingFunction: 'linear',
-    parallaxThrottleTime: 1
+    parallaxThrottleTime: 0
   };
 
   constructor() { }
