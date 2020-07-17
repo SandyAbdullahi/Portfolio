@@ -161,4 +161,31 @@
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+  .top-header {
+    margin-bottom: -35rem;
+
+    h1 {
+      font-size: 9rem;
+    }
+
+    .web-developer {
+      font-size: 7rem !important;
+    }
+
+    .my-svg {
+      display: none;
+    }
+
+    .heading-container {}
+  }
+
+  .inner-header {
+    width: 50%;
+
+    p {
+      font-size: 2rem;
+    }
+  }
+}

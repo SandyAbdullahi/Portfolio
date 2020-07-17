@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { faAirFreshener } from "@fortawesome/free-solid-svg-icons";
-import { IParallaxScrollConfig } from 'ngx-parallax-scroll'
 import * as $ from 'jquery';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -16,18 +14,9 @@ gsap.registerPlugin(ScrollTrigger);
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  faAirFreshener = faAirFreshener;
 
 
 
-  //Parallax configurations
-  innerHeaderContainer: IParallaxScrollConfig = {
-    parallaxSpeed: 0,
-    parallaxSmoothness: 0,
-    parallaxDirection: 'reverse',
-    parallaxTimingFunction: 'linear',
-    parallaxThrottleTime: 0
-  };
 
   constructor() { }
 

@@ -85,10 +85,26 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  .project-2 {
-    margin-right: -4rem !important;
-    margin-left: 4rem !important;
+  .projects {
+    margin-bottom: -30rem;
+
+    .my-card-container {
+
+      .project-1 {
+        top: 82rem;
+      }
+
+      .project-2 {
+        top: 100rem;
+      }
+
+      .project-3 {
+        top: 122rem;
+      }
+    }
+
   }
+
 
 
 }
