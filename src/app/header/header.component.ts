@@ -44,7 +44,7 @@ export class HeaderComponent implements OnInit {
         position: "relative",
         backgroundColor: "#52FFB8",
         bottom: "0",
-        color: "#fff",
+        color: "#52FFB8",
       })
         .to('.my-svg #Green_Star', {
           rotation: '360',

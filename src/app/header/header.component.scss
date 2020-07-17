@@ -116,11 +116,43 @@
     width: 60%;
     margin: 0rem auto 18rem auto;
 
+    p {
+      font-size: 1.2rem;
+    }
+
   }
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+  .top-header {
+
+
+    h1 {
+      font-weight: 900;
+      font-size: 8rem;
+    }
+
+    .web-developer {
+      font-size: 7rem !important;
+    }
+
+    .my-svg {
+      display: none;
+    }
+
+    .heading-container {
+      margin-bottom: -2rem !important;
+    }
+  }
+
+  .inner-header {
+    p {
+      font-size: 1.5rem;
+    }
+
+  }
+}
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}

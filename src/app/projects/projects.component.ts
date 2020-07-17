@@ -36,9 +36,9 @@ export class ProjectsComponent implements OnInit {
             trigger: ".trigger-",
             toggleActions: "restart none none reset",
           },
-          duration: 2.5,
+          duration: 1.8,
           ease: "power2.inOut",
-          backgroundColor: "hsl(155,100,66, 0.5)",
+          backgroundColor: "hsl(155,100,66, 0.8)",
         }
       )
     })

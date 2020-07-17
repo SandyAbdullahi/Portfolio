@@ -3,9 +3,24 @@
 .work-status {
   border: 10px solid #52FFB8;
   padding: 2rem;
+  margin: auto;
 
   fa-icon {
     display: inline-block;
     transform: rotate(-90deg);
   }
 }
+
+
+@media (min-width: 768px) {
+  .work-status {
+    width: 70%;
+    margin-bottom: 5rem;
+
+  }
+
+}
+
+
+
+@media (min-width: 992px) {}

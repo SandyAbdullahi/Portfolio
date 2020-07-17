@@ -11,13 +11,6 @@ import gsap from 'gsap';
 export class AppComponent implements OnInit {
   faFish = faFish;
 
-  WorkStatusConfig: IParallaxScrollConfig = {
-    parallaxSpeed: 0,
-    parallaxSmoothness: 0,
-    parallaxDirection: 'reverse',
-    parallaxTimingFunction: 'ease',
-    parallaxThrottleTime: 0
-  };
 
 
   ngOnInit(): void {
