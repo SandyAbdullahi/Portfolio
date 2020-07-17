@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { IParallaxScrollConfig } from 'ngx-parallax-scroll'
+import * as $ from 'jquery';
+
+
 
 @Component({
   selector: 'app-projects',
@@ -9,7 +12,7 @@ import { IParallaxScrollConfig } from 'ngx-parallax-scroll'
 export class ProjectsComponent implements OnInit {
 
   projectOneConfig: IParallaxScrollConfig = {
-    parallaxSpeed: 0.4,
+    parallaxSpeed: 0,
     parallaxSmoothness: 0,
     parallaxDirection: 'reverse',
     parallaxTimingFunction: 'ease',
@@ -27,6 +30,11 @@ export class ProjectsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $(document).ready(function () {
+
+
+
+    })
   }
 
 }
