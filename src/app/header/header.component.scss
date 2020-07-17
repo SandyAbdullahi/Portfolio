@@ -54,6 +54,7 @@
   .text-left {
     opacity: 1 !important;
     padding: 1rem 1.5rem;
+    font-weight: 500;
   }
 
   img {
@@ -151,6 +152,11 @@
       font-size: 1.5rem;
     }
 
+    .projects {
+      h1 {
+        padding: 5rem 0;
+      }
+    }
   }
 }
 

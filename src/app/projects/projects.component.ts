@@ -24,21 +24,17 @@ export class ProjectsComponent implements OnInit {
       const tl = gsap.timeline();
 
       gsap.fromTo(".card", {
-        scrollTrigger: {
-          trigger: ".trigger-3",
-          toggleActions: "restart none none reset",
-        },
         duration: 1,
-        backgroundColor: "hsl(5,6,35)",
+        backgroundColor: "transparent",
       },
         {
           scrollTrigger: {
-            trigger: ".trigger-",
+            trigger: ".trigger-2",
             toggleActions: "restart none none reset",
           },
-          duration: 1.8,
+          duration: 1.3,
           ease: "power2.inOut",
-          backgroundColor: "hsl(155,100,66, 0.8)",
+          backgroundColor: "rgba(82, 255, 183, 0.8)",
         }
       )
     })

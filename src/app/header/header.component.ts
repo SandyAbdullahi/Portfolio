@@ -42,9 +42,8 @@ export class HeaderComponent implements OnInit {
           toggleActions: "restart none none reset",
         },
         position: "relative",
-        backgroundColor: "#52FFB8",
+        opacity: "0",
         bottom: "0",
-        color: "#52FFB8",
       })
         .to('.my-svg #Green_Star', {
           rotation: '360',
