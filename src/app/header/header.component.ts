@@ -4,8 +4,9 @@ import { IParallaxScrollConfig } from 'ngx-parallax-scroll'
 import * as $ from 'jquery';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
-
+gsap.registerPlugin(MotionPathPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -45,30 +46,40 @@ export class HeaderComponent implements OnInit {
         bottom: "0",
         color: "#fff",
       })
-        .to('.my-svg polygon', {
+        .to('.my-svg #Green_Star', {
           rotation: '360',
           duration: 15,
           repeat: -1,
           ease: 'linear',
           transformOrigin: '50% 50%',
         }, "+=0")
-        .to('.my-svg .st2', {
+        .to('.my-svg #SVGID_x5F_1_x5F_', {
           rotation: '360',
-          duration: 9,
+          duration: 19,
           repeat: -1,
           ease: 'linear',
           transformOrigin: '50% 50%',
-        })
-
-      gsap.to('.my-svg .st1', {
+        }, "+=2")
+      gsap.to('.my-svg #Star', {
         scale: '1.5',
         rotation: '-360',
         duration: 9,
         repeat: -1,
-        ease: "slow(0.7, 0.7, false)",
-        transformOrigin: '50% 50%',
+        ease: "slow(1, 4, false)",
         yoyo: true,
+        transformOrigin: '50% 50%',
+
       })
+      gsap.to('.my-svg #Flower', {
+        rotation: '360',
+        scale: '2',
+        yoyo: true,
+        duration: 9,
+        repeat: -1,
+        ease: "slow(1, 8, true)",
+        transformOrigin: '50% 50%',
+      })
+
 
 
 
